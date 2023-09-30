@@ -1,0 +1,272 @@
+h1,
+h2 {
+  font-family: RecoletaBlack;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 35px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: rgb(232, 232, 232);
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.897),
+    rgba(0, 0, 0, 0.897)
+  );
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+header {
+  color: rgb(232, 232, 232);
+  background-color: #000000;
+  padding: 20px 0;
+}
+
+.content-container {
+  position: relative;
+  margin: auto;
+  max-width: 1200px;
+  padding: 0 20px;
+  z-index: 1;
+}
+
+header .content-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 745px) {
+  header .content-container {
+    justify-content: center;
+  }
+}
+
+.logo {
+  display: flex;
+}
+
+.logo h1 {
+  background: linear-gradient(
+    20deg,
+    rgb(143, 255, 229) 0%,
+    rgba(89, 89, 255, 0.91) 50%,
+    rgba(255, 147, 129, 0.93) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logo img {
+  margin-right: 10px;
+  width: 40px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.cover {
+  position: relative;
+  padding: 100px;
+  color: white;
+  text-align: center;
+  background: linear-gradient(206deg, #101029, #30307d, #663e86, #ffa755);
+  background-size: 600% 600%;
+
+  -webkit-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 84% 0%;
+  }
+  50% {
+    background-position: 17% 100%;
+  }
+  100% {
+    background-position: 84% 0%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 84% 0%;
+  }
+  50% {
+    background-position: 17% 100%;
+  }
+  100% {
+    background-position: 84% 0%;
+  }
+}
+
+.cover .content-container {
+  display: flex;
+  max-width: 1000px;
+  text-align: left;
+}
+
+.cover img#worker {
+  width: 800px;
+}
+
+@media screen and (max-width: 1200px) {
+  .cover img#worker {
+    display: none;
+  }
+}
+
+.transparent-button {
+  display: block;
+  margin: 20px 0;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  border-color: white;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 2px;
+  font-weight: bold;
+  background-color: transparent;
+}
+
+.cover .btn {
+  width: 100px;
+}
+
+#contact .btn {
+  margin: auto;
+  width: 200px;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+section img {
+  flex-shrink: 0;
+  margin: 20px;
+  width: 300px;
+}
+
+.card-border {
+  display: flex;
+  margin: 10px;
+  background: linear-gradient(
+    20deg,
+    rgb(143, 255, 229) 0%,
+    rgba(89, 89, 255, 0.91) 50%,
+    rgba(255, 147, 129, 0.93) 100%
+  );
+  border-radius: 5px;
+}
+
+#portfolio .card-border {
+  text-align: center;
+  display: block;
+  padding: 1px 0;
+}
+
+#contact .card-border {
+  background: linear-gradient(206deg, #101029, #30307d, #663e86, #ffa755);
+  background-size: 600% 600%;
+
+  -webkit-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+  text-align: center;
+  display: block;
+  padding: 20px;
+  padding-bottom: 60px;
+}
+
+.card {
+  background-color: #000000;
+  padding: 20px 50px;
+  margin: 4px;
+}
+
+.card h2 {
+  margin: 10px 0;
+}
+
+.card hr {
+  background: linear-gradient(
+    20deg,
+    rgb(143, 255, 229) 0%,
+    rgba(89, 89, 255, 0.91) 50%,
+    rgba(255, 147, 129, 0.93) 100%
+  );
+  height: 2px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 900px) {
+  .card-border img {
+    display: none;
+  }
+}
+
+input {
+  width: 100%;
+  display: block;
+  margin: 10px auto;
+  max-width: 400px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+}
+
+textarea {
+  width: 100%;
+  max-width: 400px;
+  height: 150px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  resize: none;
+}
+
+footer {
+  background-color: #141414dd;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
