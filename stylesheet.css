@@ -276,6 +276,7 @@ button:hover {
 
 #portfolio a {
   max-width: 100%;
+  text-decoration: none;
 }
 
 #portfolio .card {
