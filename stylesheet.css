@@ -18,7 +18,7 @@ p {
 
 @media screen and (max-width: 600px) {
   h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   h2 {
     font-size: 1.5rem;
@@ -192,7 +192,7 @@ button:hover {
 
 @media screen and (max-width: 745px) {
   .cover .btn {
-    margin: auto;
+    margin: 20px auto;
   }
   .cover h1 {
     text-align: center;
@@ -246,6 +246,12 @@ button:hover {
   background-color: #000000;
   padding: 20px 50px;
   margin: 4px;
+}
+
+@media screen and (max-width: 745px) {
+  .card {
+    padding: 20px 30px;
+  }
 }
 
 .card h2 {
@@ -319,7 +325,7 @@ button:hover {
 }
 
 .portfolio-card p {
-  margin: 20px 30px;
+  margin: 20px 5px;
   text-decoration: none;
   color: white;
 }
