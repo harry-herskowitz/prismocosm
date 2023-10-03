@@ -11,19 +11,20 @@ h2 {
   font-size: 2rem;
 }
 
-@media screen and (max-width: 600px) {
-  h1 {
-    font-size: 3rem;
-  }
-
-  h2 {
-    font-size: 2rem;
-  }
-}
-
 p {
   font-size: 1.5rem;
   line-height: 35px;
+}
+
+@media screen and (max-width: 600px) {
+  h1,
+  h2 {
+    font-size: 2rem;
+  }
+  p {
+    line-height: normal;
+    font-size: 1rem;
+  }
 }
 
 html {
@@ -39,8 +40,8 @@ body {
     rgba(0, 0, 0, 0.897),
     rgba(0, 0, 0, 0.897)
   );
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 header {
@@ -61,6 +62,7 @@ header .content-container {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 0 20px;
 }
 
 @media screen and (max-width: 745px) {
@@ -103,9 +105,9 @@ nav a {
 
 .cover {
   position: relative;
-  padding: 100px;
+  padding: 80px 20px;
   color: white;
-  text-align: center;
+  text-align: left;
   background: linear-gradient(206deg, #101029, #30307d, #663e86, #ffa755);
   background-size: 600% 600%;
 
@@ -137,8 +139,8 @@ nav a {
 }
 
 @media screen and (max-width: 600px) {
-  .cover {
-    padding: 10px;
+  .content-container {
+    padding: 5px;
   }
 }
 
@@ -149,8 +151,6 @@ nav a {
 .cover .content-container {
   display: flex;
   max-width: 1000px;
-  text-align: left;
-  padding: 0 20px;
 }
 
 .cover .animation {
@@ -185,13 +185,19 @@ button:hover {
   width: 100px;
 }
 
+@media screen and (max-width: 745px) {
+  .cover .btn {
+    margin: auto;
+  }
+  .cover h1{
+    text-align: center;
+    max-width: none;
+  }
+}
+
 #contact .btn {
   margin: auto;
   width: 200px;
-}
-
-.main-content {
-  padding: 20px;
 }
 
 #services .animation {
@@ -226,7 +232,6 @@ button:hover {
   animation: SpaceTravel 30s ease infinite;
   text-align: center;
   display: block;
-  padding: 20px;
   padding-top: 100px;
   padding-bottom: 150px;
 }
@@ -338,8 +343,8 @@ textarea {
   border-radius: 4px;
   background-color: #f8f8f8;
   font-size: 16px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   resize: none;
 }
 
