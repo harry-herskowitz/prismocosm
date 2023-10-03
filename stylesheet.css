@@ -17,11 +17,11 @@ p {
 }
 
 @media screen and (max-width: 600px) {
-  h1{
+  h1 {
     font-size: 2rem;
   }
   h2 {
-    font-size:1.5rem;
+    font-size: 1.5rem;
   }
   p {
     line-height: normal;
@@ -145,7 +145,7 @@ nav a {
     padding: 5px;
   }
   .cover {
-    padding: 40px 20px
+    padding: 40px 20px;
   }
 }
 
@@ -194,7 +194,7 @@ button:hover {
   .cover .btn {
     margin: auto;
   }
-  .cover h1{
+  .cover h1 {
     text-align: center;
     max-width: none;
   }
