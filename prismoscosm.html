@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="stylesheet.css" />
   </head>
+
   <body>
     <header>
       <div class="content-container">
@@ -21,7 +22,7 @@
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#portfolio">Our Work</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
@@ -29,14 +30,14 @@
     </header>
     <div class="cover">
       <div class="content-container">
-        <img id="worker" src="./working-16.svg" />
+        <img class="animation" id="worker" src="images/cover.svg" />
         <div>
-          <h1>Master the Digital&nbsp;Universe</h1>
+          <h1>Master the Digital Universe</h1>
           <p>
             Unlock your potential with a simple website or a complex application
             built for speed, durability and beauty
           </p>
-          <a href="#" class="transparent-button btn">Get Started</a>
+          <a href="#contact" class="transparent-button btn">Get Started</a>
         </div>
       </div>
     </div>
@@ -57,10 +58,10 @@
                 story, showcase your products, and engage your audience.
               </p>
             </div>
-            <img src="rocket-5.svg" />
+            <img class="animation" src="images/rocket.svg" />
           </div>
           <div class="card-border">
-            <img src="satellite-5.svg" />
+            <img class="animation" src="images/satellite.svg" />
             <div class="card">
               <h2>Complex Web Applications</h2>
               <hr />
@@ -91,33 +92,110 @@
                 device they prefer.
               </p>
             </div>
-            <img src="working-15.svg" />
+            <img class="animation" src="images/working.svg" />
           </div>
         </section>
         <section id="portfolio">
-          <div class="card-border">
-            <div class="card">
-              <h1>Our Work</h1>
-              <hr />
-            </div>
+          <h1>Our Work</h1>
+          <div class="portfolio-container">
+            <a href="https://app.tapedrop.com" target="_blank">
+              <div class="portfolio-card">
+                <div class="portfolio-img-container">
+                  <img class="portfolio-img" src="images/tapedrop-app.jpg" />
+                </div>
+                <p><b>The Tapedrop App</b></p>
+                <p>
+                  A cross platform application for finding local musicians.
+                  Available on web and iOS.
+                </p>
+              </div>
+            </a>
+            <a href="https://tapedrop.com" target="_blank">
+              <div class="portfolio-card">
+                <div class="portfolio-img-container">
+                  <img class="portfolio-img" src="images/tapedrop-site.png" />
+                </div>
+                <p><b>Tapedrop.com</b></p>
+                <p>
+                  A blog covering local DIY music and filming exclusive live
+                  sessions for undergound artists.
+                </p>
+              </div>
+            </a>
+            <a href="cemeterycollaboratory.org/" target="_blank">
+              <div class="portfolio-card">
+                <div class="portfolio-img-container">
+                  <img class="portfolio-img" src="images/east-end.png" />
+                </div>
+                <p><b>East End Collaboratory</b></p>
+                <p>
+                  A community organization dedicated to studying and preserving
+                  historic African American cemeteries.
+                </p>
+              </div>
+            </a>
+            <a href="https://www.richmondcemeteries.org" target="_blank">
+              <div class="portfolio-card">
+                <div class="portfolio-img-container">
+                  <img class="portfolio-img" src="images/rva-cem.png" />
+                </div>
+                <p><b>Richmond Cemeteries</b></p>
+                <p>
+                  An interactive guide to burial grounds in Richmond, VA
+                  featuring detailed maps and podcasts.
+                </p>
+              </div>
+            </a>
+            <a href="https://abbyhollis.com/threadthreads" target="_blank">
+              <div class="portfolio-card">
+                <div class="portfolio-img-container">
+                  <img class="portfolio-img" src="images/threadthreads.jpg" />
+                </div>
+                <p><b>Thread Threads</b></p>
+                <p>
+                  A digital archive of textiles collecting the continuing
+                  stories of secondhand garments.
+                </p>
+              </div>
+            </a>
+            <a href="https://prismocosm.gumroad.com/l/rclfob" target="_blank">
+              <div class="portfolio-card">
+                <div class="portfolio-img-container">
+                  <img class="portfolio-img" src="images/jesstheme.jpg" />
+                </div>
+                <p><b>Jess WordPress Theme</b></p>
+                <p>
+                  A minimalist WordPress Theme for artists to spotlight their
+                  work with simplicity.
+                </p>
+              </div>
+            </a>
           </div>
         </section>
         <section id="contact">
           <div class="card-border">
             <h1>Let's Connect!</h1>
-            <form>
-              <input name="email" placeholder="Your Email" />
-              <textarea
-                name="content"
-                rows="4"
-                cols="50"
-                placeholder="Your Project Details"
-              ></textarea>
+            <form action="https://api.web3forms.com/submit" method="POST">
               <input
-                type="submit"
-                value="Send Message"
-                class="transparent-button btn"
+                type="hidden"
+                name="access_key"
+                value="b90c6829-193f-4476-9d03-9d0d634414b8"
               />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="message"
+                placeholder="Tell us about your project"
+                required
+              ></textarea>
+              <div class="h-captcha" data-captcha="true"></div>
+              <button type="submit" class="transparent-button btn">
+                Submit Form
+              </button>
             </form>
           </div>
         </section>

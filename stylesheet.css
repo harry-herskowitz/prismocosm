@@ -11,6 +11,16 @@ h2 {
   font-size: 2rem;
 }
 
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
+
 p {
   font-size: 1.5rem;
   line-height: 35px;
@@ -29,8 +39,8 @@ body {
     rgba(0, 0, 0, 0.897),
     rgba(0, 0, 0, 0.897)
   );
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 header {
@@ -43,7 +53,6 @@ header {
   position: relative;
   margin: auto;
   max-width: 1200px;
-  padding: 0 20px;
   z-index: 1;
 }
 
@@ -71,13 +80,9 @@ header .content-container {
     rgba(89, 89, 255, 0.91) 50%,
     rgba(255, 147, 129, 0.93) 100%
   );
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.logo img {
-  margin-right: 10px;
-  width: 40px;
 }
 
 nav ul {
@@ -104,11 +109,11 @@ nav a {
   background: linear-gradient(206deg, #101029, #30307d, #663e86, #ffa755);
   background-size: 600% 600%;
 
-  -webkit-animation: AnimationName 30s ease infinite;
-  animation: AnimationName 30s ease infinite;
+  -webkit-animation: SpaceTravel 30s ease infinite;
+  animation: SpaceTravel 30s ease infinite;
 }
 
-@-webkit-keyframes AnimationName {
+@-webkit-keyframes SpaceTravel {
   0% {
     background-position: 84% 0%;
   }
@@ -119,7 +124,7 @@ nav a {
     background-position: 84% 0%;
   }
 }
-@keyframes AnimationName {
+@keyframes SpaceTravel {
   0% {
     background-position: 84% 0%;
   }
@@ -129,22 +134,37 @@ nav a {
   100% {
     background-position: 84% 0%;
   }
+}
+
+@media screen and (max-width: 600px) {
+  .cover {
+    padding: 10px;
+  }
+}
+
+.cover h1 {
+  max-width: 450px;
 }
 
 .cover .content-container {
   display: flex;
   max-width: 1000px;
   text-align: left;
+  padding: 0 20px;
 }
 
-.cover img#worker {
+.cover .animation {
   width: 800px;
 }
 
 @media screen and (max-width: 1200px) {
-  .cover img#worker {
+  .cover .animation {
     display: none;
   }
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 .transparent-button {
@@ -174,7 +194,7 @@ nav a {
   padding: 20px;
 }
 
-section img {
+#services .animation {
   flex-shrink: 0;
   margin: 20px;
   width: 300px;
@@ -182,7 +202,7 @@ section img {
 
 .card-border {
   display: flex;
-  margin: 10px;
+  margin: 20px 10px;
   background: linear-gradient(
     20deg,
     rgb(143, 255, 229) 0%,
@@ -202,12 +222,13 @@ section img {
   background: linear-gradient(206deg, #101029, #30307d, #663e86, #ffa755);
   background-size: 600% 600%;
 
-  -webkit-animation: AnimationName 30s ease infinite;
-  animation: AnimationName 30s ease infinite;
+  -webkit-animation: SpaceTravel 30s ease infinite;
+  animation: SpaceTravel 30s ease infinite;
   text-align: center;
   display: block;
   padding: 20px;
-  padding-bottom: 60px;
+  padding-top: 100px;
+  padding-bottom: 150px;
 }
 
 .card {
@@ -232,9 +253,67 @@ section img {
 }
 
 @media screen and (max-width: 900px) {
-  .card-border img {
+  .card-border .animation {
     display: none;
   }
+}
+
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+}
+
+#portfolio h1 {
+  text-align: center;
+}
+
+#portfolio a {
+  max-width: 100%;
+}
+
+#portfolio .card {
+  padding: 20px;
+}
+
+.portfolio-card {
+  text-align: left;
+  max-width: 400px;
+  background: linear-gradient(
+    20deg,
+    rgba(89, 89, 255, 0.91) 50%,
+    rgba(255, 147, 129, 0.93) 100%
+  );
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+}
+
+.portfolio-img-container {
+  height: 300px;
+  background-color: #000000;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio-img {
+  width: 400px;
+}
+
+.portfolio-card p {
+  margin: 20px 30px;
+  text-decoration: none;
+  color: white;
+}
+
+.portfolio-card:hover {
+  top: -10px;
 }
 
 input {
@@ -259,8 +338,8 @@ textarea {
   border-radius: 4px;
   background-color: #f8f8f8;
   font-size: 16px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   resize: none;
 }
 
