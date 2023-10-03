@@ -144,6 +144,9 @@ nav a {
   .content-container {
     padding: 5px;
   }
+  .cover {
+    padding: 40px 20px
+  }
 }
 
 .cover h1 {
