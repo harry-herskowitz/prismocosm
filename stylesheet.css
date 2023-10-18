@@ -361,6 +361,10 @@ textarea {
   resize: none;
 }
 
+.h-captcha{
+  margin-bottom: 15px;
+}
+
 footer {
   background-color: #141414dd;
   color: #fff;
